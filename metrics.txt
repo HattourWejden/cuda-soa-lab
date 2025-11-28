@@ -1,0 +1,50 @@
+# HELP python_gc_objects_collected_total Objects collected during gc
+# TYPE python_gc_objects_collected_total counter
+python_gc_objects_collected_total{generation="0"} 510.0
+python_gc_objects_collected_total{generation="1"} 9.0
+python_gc_objects_collected_total{generation="2"} 0.0
+# HELP python_gc_objects_uncollectable_total Uncollectable objects found during GC
+# TYPE python_gc_objects_uncollectable_total counter
+python_gc_objects_uncollectable_total{generation="0"} 0.0
+python_gc_objects_uncollectable_total{generation="1"} 0.0
+python_gc_objects_uncollectable_total{generation="2"} 0.0
+# HELP python_gc_collections_total Number of times this generation was collected
+# TYPE python_gc_collections_total counter
+python_gc_collections_total{generation="0"} 73.0
+python_gc_collections_total{generation="1"} 6.0
+python_gc_collections_total{generation="2"} 0.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="3",minor="13",patchlevel="9",version="3.13.9"} 1.0
+# HELP matrix_add_requests_total Total matrix addition requests
+# TYPE matrix_add_requests_total counter
+# HELP matrix_add_duration_seconds Matrix addition duration in seconds
+# TYPE matrix_add_duration_seconds histogram
+matrix_add_duration_seconds_bucket{le="0.001"} 0.0
+matrix_add_duration_seconds_bucket{le="0.005"} 0.0
+matrix_add_duration_seconds_bucket{le="0.01"} 0.0
+matrix_add_duration_seconds_bucket{le="0.05"} 0.0
+matrix_add_duration_seconds_bucket{le="0.1"} 0.0
+matrix_add_duration_seconds_bucket{le="0.5"} 0.0
+matrix_add_duration_seconds_bucket{le="1.0"} 0.0
+matrix_add_duration_seconds_bucket{le="+Inf"} 0.0
+matrix_add_duration_seconds_count 0.0
+matrix_add_duration_seconds_sum 0.0
+# HELP matrix_add_duration_seconds_created Matrix addition duration in seconds
+# TYPE matrix_add_duration_seconds_created gauge
+matrix_add_duration_seconds_created 1.7643647867955017e+09
+# HELP gpu_memory_used_mb GPU memory used in MB
+# TYPE gpu_memory_used_mb gauge
+gpu_memory_used_mb 0.0
+# HELP gpu_memory_total_mb Total GPU memory in MB
+# TYPE gpu_memory_total_mb gauge
+gpu_memory_total_mb 0.0
+# HELP gpu_utilization_percent GPU utilization percentage
+# TYPE gpu_utilization_percent gauge
+gpu_utilization_percent 0.0
+# HELP health_checks_total Total health checks
+# TYPE health_checks_total counter
+health_checks_total 3.0
+# HELP health_checks_created Total health checks
+# TYPE health_checks_created gauge
+health_checks_created 1.7643647867956154e+09
